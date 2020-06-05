@@ -13,4 +13,3 @@ i = 1
 while i <= len(s):
     print("literka: " + (s[i]).upper())
     i += 1
-
