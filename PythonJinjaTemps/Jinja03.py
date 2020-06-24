@@ -1,5 +1,5 @@
 from jinja2 import Template
-from classes.Person import *
+from classes.Person import Person
 
 person = Person('Peter', 34)
 
