@@ -9,7 +9,7 @@ persons = [
     {'name': 'Dragomir', 'age': 54}
 ]
 
-file_loader = FileSystemLoader(r'C:\Repos\Python\PythonJinjaTemps\templates')
+file_loader = FileSystemLoader(r'templates')
 env = Environment(loader=file_loader)
 
 template = env.get_template('showpersons.txt')
