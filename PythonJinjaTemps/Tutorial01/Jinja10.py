@@ -1,16 +1,11 @@
 from jinja2 import Environment, FileSystemLoader
 
-cars = [
-    {'name': 'Audi', 'price': 23000},
-    {'name': 'Skoda', 'price': 17300},
-    {'name': 'Volvo', 'price': 44300},
-    {'name': 'Volkswagen', 'price': 21300}
-]
+content = 'This is about page'
 
-file_loader = FileSystemLoader('templates')
+file_loader = FileSystemLoader('htmls')
 env = Environment(loader=file_loader)
 
-template = env.get_template('sumprices.txt')
+template = env.get_template('about.html')
 
-output = template.render(cars=cars)
+output = template.render(content=content)
 print(output)
